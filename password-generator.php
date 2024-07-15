@@ -20,7 +20,7 @@ function generatePassword(): string
         $password .= $allChars[rand(0, strlen($allChars) - 1)];
     }
 
-    return str_shuffle($password) . ' ' . 'Taille : ' . strlen($password) . ' caractères';
+    return str_shuffle($password);
 }
 
 echo generatePassword();
